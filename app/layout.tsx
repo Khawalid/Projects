@@ -69,7 +69,7 @@ export default function RootLayout({ children }: LayoutProps) {
               )}
             </button>
             <div className="flex items-center">
-              <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={60} height={60} className="object-contain" />
+              <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={60} height={60} className="object-contain rounded-full" />
               <h1 className="text-xl font-bold ml-2">Irteqa Welfare Organization</h1>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function RootLayout({ children }: LayoutProps) {
             <div className="flex items-center">
               <Link href="/" legacyBehavior>
                 <a className="flex items-center">
-                  <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={80} height={80} className="object-contain" />
+                  <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={80} height={80} className="object-contain rounded-full" />
                   <span className="text-2xl font-bold ml-2">Irteqa Welfare Organization</span>
                 </a>
               </Link>
