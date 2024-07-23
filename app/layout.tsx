@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google';
 import Link from 'next/link';
 import { useState, useEffect, ReactNode } from 'react';
 import { ChevronDownIcon, ChevronUpIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,6 +25,11 @@ export default function RootLayout({ children }: LayoutProps) {
 
   const handleToggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+  };
+
+  const handleMenuItemClick = () => {
+    setDropdownOpen(false);
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -54,7 +60,7 @@ export default function RootLayout({ children }: LayoutProps) {
       <body className={`${inter.variable} bg-white text-gray-900`}>
         <header className="bg-blue-500 text-white p-4 shadow-md z-20 relative">
           {/* Mobile Navigation */}
-          <div className="flex md:hidden flex-col items-center space-y-2">
+          <div className="flex md:hidden justify-between items-center">
             <button onClick={handleToggleMenu}>
               {isMenuOpen ? (
                 <XMarkIcon className="h-8 w-8 text-white" />
@@ -62,7 +68,10 @@ export default function RootLayout({ children }: LayoutProps) {
                 <Bars3Icon className="h-8 w-8 text-white" />
               )}
             </button>
-            <h1 className="text-xl font-bold">Irteqa Welfare Organization</h1>
+            <div className="flex items-center">
+              <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={60} height={60} className="object-contain" />
+              <h1 className="text-xl font-bold ml-2">Irteqa Welfare Organization</h1>
+            </div>
           </div>
           
           {/* Desktop Navigation */}
@@ -70,18 +79,19 @@ export default function RootLayout({ children }: LayoutProps) {
             <div className="flex items-center">
               <Link href="/" legacyBehavior>
                 <a className="flex items-center">
+                  <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={80} height={80} className="object-contain" />
                   <span className="text-2xl font-bold ml-2">Irteqa Welfare Organization</span>
                 </a>
               </Link>
             </div>
-            <ul className="flex space-x-4">
-              <li className="hover:text-gray-300 transition-colors">
+            <ul className="flex space-x-6">
+              <li className="hover:text-gray-300 transition-colors px-3 py-2">
                 <Link href="/">Home</Link>
               </li>
               <li id="services-tab" className="relative group">
                 <span
                   onClick={handleToggleDropdown}
-                  className="cursor-pointer hover:text-gray-300 transition-colors flex items-center"
+                  className="cursor-pointer hover:text-gray-300 transition-colors flex items-center px-3 py-2"
                 >
                   Services
                   {isDropdownOpen ? (
@@ -96,24 +106,21 @@ export default function RootLayout({ children }: LayoutProps) {
                     className="absolute left-0 mt-2 bg-blue-500 p-2 space-y-2 rounded shadow-lg w-48 z-30"
                   >
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                      <Link href="/services/school-health">School Health Services</Link>
+                      <Link href="/services/school-health" onClick={handleMenuItemClick}>School Health Services</Link>
                     </li>
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                      <Link href="/services/health-care-centers">Health Care Centers</Link>
+                      <Link href="/services/health-care-centers" onClick={handleMenuItemClick}>Health Care Centers</Link>
                     </li>
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                      <Link href="/services/health-workshops">Medical Research</Link>
+                      <Link href="/services/health-workshops" onClick={handleMenuItemClick}>Medical Research</Link>
                     </li>
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                      <Link href="/services/animal-shelter">Animal Shelter</Link>
+                      <Link href="/services/animal-shelter" onClick={handleMenuItemClick}>Animal Shelter</Link>
                     </li>
                   </ul>
                 )}
               </li>
-              <li className="hover:text-gray-300 transition-colors">
-                <Link href="/about-us">About Us</Link>
-              </li>
-              <li className="hover:text-gray-300 transition-colors">
+              <li className="hover:text-gray-300 transition-colors px-3 py-2">
                 <Link href="/contact-us">Contact Us</Link>
               </li>
             </ul>
@@ -123,7 +130,7 @@ export default function RootLayout({ children }: LayoutProps) {
             <div className="md:hidden absolute top-full left-0 w-full bg-blue-500 text-white p-4 z-20">
               <ul className="space-y-4">
                 <li className="hover:text-gray-300 transition-colors">
-                  <Link href="/">Home</Link>
+                  <Link href="/" onClick={handleMenuItemClick}>Home</Link>
                 </li>
                 <li className="hover:text-gray-300 transition-colors">
                   <span
@@ -143,25 +150,22 @@ export default function RootLayout({ children }: LayoutProps) {
                       className="mt-2 bg-blue-500 p-2 space-y-2 rounded shadow-lg"
                     >
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                        <Link href="/services/school-health">School Health Services</Link>
+                        <Link href="/services/school-health" onClick={handleMenuItemClick}>School Health Services</Link>
                       </li>
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                        <Link href="/services/health-care-centers">Health Care Centers</Link>
+                        <Link href="/services/health-care-centers" onClick={handleMenuItemClick}>Health Care Centers</Link>
                       </li>
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                        <Link href="/services/health-workshops">Medical Research</Link>
+                        <Link href="/services/health-workshops" onClick={handleMenuItemClick}>Medical Research</Link>
                       </li>
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                        <Link href="/services/animal-shelter">Animal Shelter</Link>
+                        <Link href="/services/animal-shelter" onClick={handleMenuItemClick}>Animal Shelter</Link>
                       </li>
                     </ul>
                   )}
                 </li>
                 <li className="hover:text-gray-300 transition-colors">
-                  <Link href="/about-us">About Us</Link>
-                </li>
-                <li className="hover:text-gray-300 transition-colors">
-                  <Link href="/contact-us">Contact Us</Link>
+                  <Link href="/contact-us" onClick={handleMenuItemClick}>Contact Us</Link>
                 </li>
               </ul>
             </div>
