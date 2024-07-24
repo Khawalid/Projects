@@ -75,7 +75,7 @@ export default function MedicalResearch() {
 
       {/* Recommendations Section */}
       <section className="py-16 bg-gray-100 text-center fade-in">
-        <h2 className="text-3xl font-bold mb-8">Recommendations</h2>
+        <h2 className="text-3xl font-bold mb-8">Testimonials</h2>
         <div className="flex flex-col md:flex-row items-center justify-around px-4">
           <div className="flex flex-col items-center md:items-start mb-8 md:mb-0 md:mr-8">
             <Image
