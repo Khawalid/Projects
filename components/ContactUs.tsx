@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter } from "next/navigation";
 import {
   Form,
   FormControl,
@@ -21,7 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
-import { FaFacebook } from "react-icons/fa"; // Import Facebook icon from react-icons
+import { FaFacebook, FaWhatsapp, FaEnvelope, FaGlobe } from "react-icons/fa"; // Import necessary icons from react-icons
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }),
@@ -101,6 +100,31 @@ const ContactUs = () => {
         <h2 className="text-2xl font-semibold text-center mb-4">Contact Us</h2>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <FormField
+              control={form.control}
+              name="prefix"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Prefix</FormLabel>
+                  <FormControl>
+                    <Select
+                      value={field.value}
+                      onValueChange={(value) => field.onChange(value)}
+                    >
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Prefix" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="Mr">Mr</SelectItem>
+                        <SelectItem value="Mrs">Mrs</SelectItem>
+                        <SelectItem value="Dr">Dr</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <FormField
                 control={form.control}
@@ -129,31 +153,6 @@ const ContactUs = () => {
                 )}
               />
             </div>
-            <FormField
-              control={form.control}
-              name="prefix"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Prefix</FormLabel>
-                  <FormControl>
-                    <Select
-                      value={field.value}
-                      onValueChange={(value) => field.onChange(value)}
-                    >
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder="Prefix" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="Mr">Mr</SelectItem>
-                        <SelectItem value="Mrs">Mrs</SelectItem>
-                        <SelectItem value="Dr">Dr</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
             <FormField
               control={form.control}
               name="address"
@@ -303,19 +302,33 @@ const ContactUs = () => {
           </p>
         )}
         <div className="mt-8 text-center">
-          <p>
-            Address: House No. B-67, Street No. 5, Azeem Khan Goth, Block 4-A,
-            Gulshan -e- Iqbal, Karachi, Pakistan
+          <p>Address: House No. B-67, Street No. 5, Azeem Khan Goth, Block 4-A, Gulshan -e- Iqbal, Karachi, Pakistan</p>
+          <p className="flex items-center justify-center mt-2">
+            <FaWhatsapp className="mr-2 text-green-600" />
+            Contact us (call or whatsapp): +92 331-2440525
           </p>
-          <p>Contact us (call or whatsapp): +92 331-2440525</p>
-          <a
-            href="https://www.facebook.com/IWO.Official/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-2"
-          >
-            <FaFacebook className="w-6 h-6 text-blue-600" />
-          </a>
+          <p className="flex items-center justify-center mt-2">
+            <span className="mr-2">Facebook:</span>
+            <a
+              href="https://www.facebook.com/IWO.Official/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <FaFacebook className="w-6 h-6 text-blue-600" />
+            </a>
+          </p>
+          <p className="flex items-center justify-center mt-2">
+            <FaEnvelope className="mr-2 text-gray-600" />
+            Email: admin@iwo.org.pk
+          </p>
+          <p className="flex items-center justify-center mt-2">
+            <FaGlobe className="mr-2 text-blue-600" />
+            Website: 
+            <a href="https://iwo.org.pk" target="_blank" rel="noopener noreferrer" className="ml-1 text-blue-600 underline">
+              iwo.org.pk
+            </a>
+          </p>
         </div>
       </div>
     </div>

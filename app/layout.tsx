@@ -177,7 +177,12 @@ export default function RootLayout({ children }: LayoutProps) {
         <footer className="bg-blue-500 text-white p-4 mt-8">
           <div className="container mx-auto text-center">
             <p>This organization is a non-political, non-sectarian voluntary Social Welfare Association.</p>
-            <p>Registered with Social Welfare Department, Government of Sindh, Pakistan. Registration number: DSW 3314-K.</p>
+            <p>Registered with Social Welfare Department, Government of Sindh, Pakistan.</p>
+            <p>Registration number: DSW 3314-K</p>
+            <div className="flex justify-center space-x-4 mt-4">
+              <Image src="/images/logo.jpg" alt="Irteqa Welfare Organization Logo" width={60} height={60} className="object-contain rounded-full" />
+              <Image src="/images/govt-of-sindh-logo.png" alt="Government of Sindh Logo" width={60} height={60} className="object-contain rounded-full" />
+            </div>
           </div>
         </footer>
       </body>

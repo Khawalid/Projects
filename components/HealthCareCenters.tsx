@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function HealthCareCenters() {
   const images = [
-    { src: '/images/elderly-1.jpg', alt: 'Elderly care 1' },
+    { src: '/images/home.jpg', alt: 'Elderly care 1' },
     { src: '/images/elderly-2.jpg', alt: 'Elderly care 2' },
     { src: '/images/elderly-3.jpg', alt: 'Elderly care 3' },
     { src: '/images/elderly-4.jpg', alt: 'Elderly care 4' },
@@ -37,7 +37,7 @@ export default function HealthCareCenters() {
         />
       </header>
 
-      <section className="py-16 bg-gray-100 text-center fade-in">
+      <section className="py-12 bg-gray-100 text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">Hospice For The Elderly</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           Changing socio-economic conditions are driving a need for old-homes where aging parents can be left with experienced staff for caring.
@@ -53,9 +53,9 @@ export default function HealthCareCenters() {
         </p>
       </section>
 
-      <section className="py-16 bg-gray-100 text-center fade-in">
+      <section className="py-2 bg-gray-100 text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">Medical Camps</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 py-4">
           {images.map((image, index) => (
             <div key={index} className="relative w-full h-64 sm:h-80 md:h-96 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
               <Image

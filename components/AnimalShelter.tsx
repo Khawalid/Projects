@@ -6,9 +6,6 @@ import { useEffect } from 'react';
 export default function AnimalShelter() {
   const images = [
     { src: '/images/animal-1.jpg', alt: 'Animal Shelter 1', width: 960, height: 1280 },
-    { src: '/images/animal-2.jpg', alt: 'Animal Shelter 2', width: 1200, height: 675 },
-    { src: '/images/animal-3.jpg', alt: 'Animal Shelter 3', width: 800, height: 450 },
-    { src: '/images/animal-4.jpg', alt: 'Animal Shelter 4', width: 540, height: 405 },
     { src: '/images/animal-5.jpg', alt: 'All destitute animals need care. Volunteering and sharing love is a great way to escape from worries of life.', width: 1280, height: 960 },
     { src: '/images/animal-6.jpg', alt: 'Animal Shelter 6', width: 1280, height: 960 },
     { src: '/images/animal-7.jpg', alt: 'Animal Shelter 7', width: 960, height: 1280 },
@@ -46,7 +43,7 @@ export default function AnimalShelter() {
       </header>
 
       <section className="py-16 bg-gray-100 text-center fade-in">
-        <h2 className="text-3xl font-bold mb-4">Animal Shelter</h2>
+        <h2 className="text-3xl font-bold mb-4">Love for Animals</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           IWO, since its inception, has helped destitute animals in individual capacities through its founding members. The number of such animals is continuously rising which calls for a proper place for them where they can live, be fed, and taken care of.
         </p>
@@ -61,9 +58,9 @@ export default function AnimalShelter() {
         </p>
       </section>
 
-      <section className="py-16 bg-gray-100 text-center fade-in">
-        <h2 className="text-3xl font-bold mb-4">Shelters</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
+      <section className="py-2 bg-gray-100 text-center fade-in">
+        <h2 className="text-3xl font-bold mb-4">Love for Animals</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {images.map((image, index) => (
             <div key={index} className="text-center bg-white p-0 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out relative">
               <div className="relative w-full h-64 sm:h-80 md:h-96">

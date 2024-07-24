@@ -61,7 +61,7 @@ export default function SchoolHealthServices() {
             className="rounded-2xl shadow-lg border-2 border-black"
           />
         </div>
-        <p className="max-w-3xl mx-auto text-lg px-4">
+        <p className="max-w-3xl mx-auto text-lg px-4 mb-10">
           We have 9 state-of-the-art school health rooms working in different schools of Karachi.
         </p>
         <p className="max-w-3xl mx-auto text-lg px-4">
@@ -88,7 +88,7 @@ export default function SchoolHealthServices() {
         </p>
       </section>
 
-      <section className="py-16 text-center fade-in">
+      <section className="text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">Why Need a School Health Program?</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           The primary business of any school is education. However, research shows that students learn best when they are healthy, safe, and feel connected to their school. An investment in a healthy school community is an investment in student success. The healthy development of children and adolescents is influenced by many societal institutions. After the family, the school is the primary institution responsible for the development of young people all over the world.
@@ -107,7 +107,7 @@ export default function SchoolHealthServices() {
         </p>
       </section>
 
-      <section className="py-16 bg-gray-100 text-center fade-in">
+      <section className="my-16 bg-gray-100 text-center fade-in py-16">
         <h2 className="text-3xl font-bold mb-4">What Irteqa School Health Program (ISHP) Has To Offer</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           ISHP offers comprehensive health programs and provides services in various schools. It has also adopted three schools where it is providing honorary school health services. ISHP offers the following services as part of the Onsite School Clinic/Health Room:

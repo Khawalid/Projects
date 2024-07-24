@@ -3,21 +3,9 @@ import Image from "next/image";
 const teamMembers = [
   {
     name: "Dr. Farah Ahmad",
-    qualifications: "MBBS, MPH, MSBE",
-    role: "Founding member, General secretary",
+    qualifications: "MBBS, DCPS, MCPS (HCSM), CHPE, MSBE",
+    role: "Founding member, General Secretary",
     photo: "/images/team/farah.png",
-  },
-  {
-    name: "Dr. Shameen Siddiqui",
-    qualifications: "MBBS, MCPS",
-    role: "Vice President",
-    photo: "/images/team/shameen.png",
-  },
-  {
-    name: "Dr. Nosheen Zehra",
-    qualifications: "MBBS, MPH, MSBE",
-    role: "Founding member, Vice President",
-    photo: "/images/team/nosheen.png",
   },
   {
     name: "Dr. Anwar Khan",
@@ -55,14 +43,18 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       <header className="relative w-full mb-8 z-10 overflow-hidden">
-        <div className="relative w-full h-64 md:h-96">
-          <Image
+        <div className="relative w-full h-64 md:h-96 bg-gray-300 flex items-center justify-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-center">
+            Home Page Image Here
+          </h1>
+          {/* Uncomment below line if you want to add an actual image */}
+          {/* <Image
             src="/images/home.jpg"
             alt="Health services for all"
             layout="fill"
             objectFit="cover"
             className="absolute w-full h-full object-cover border-2 border-black shadow-lg"
-          />
+          /> */}
           <div className="absolute inset-0 bg-black opacity-30"></div>
         </div>
       </header>
@@ -76,6 +68,28 @@ export default function HomePage() {
           Social welfare department, Government of Sindh (Registration No: DSW
           (3314)-K) in 2009.
         </p>
+        <div className="flex justify-center items-center gap-8 mt-8">
+          <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-2 border-black">
+            <Image
+              src="/images/logo.jpg"
+              alt="Irteqa Welfare Organization Logo"
+              layout="responsive"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+          <div className="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden border-2 border-black">
+            <Image
+              src="/images/govt-of-sindh-logo.png"
+              alt="Government of Sindh Logo"
+              layout="responsive"
+              width={150}
+              height={150}
+              className="object-contain"
+            />
+          </div>
+        </div>
       </section>
 
       <section className="py-16 text-center">
@@ -103,7 +117,7 @@ export default function HomePage() {
 
       <section className="py-16 bg-gray-100 text-center">
         <h2 className="text-3xl font-bold mb-4">Our Team</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 px-4">
           {teamMembers.map((member) => (
             <div
               key={member.name}
