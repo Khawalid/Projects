@@ -5,12 +5,8 @@ import { useEffect } from 'react';
 export default function SchoolHealthServices() {
   const images = [
     {
-      src: '/images/bus.png',
-      alt: 'Healthy students are better able to learn',
-    },
-    {
       src: '/images/school-health-1.jpg',
-      alt: 'School health screening camp',
+      alt: 'School health camp',
     },
     {
       src: '/images/school-health-2.jpg',
@@ -18,11 +14,15 @@ export default function SchoolHealthServices() {
     },
     {
       src: '/images/school-health-3.jpg',
-      alt: 'Deworming camp',
+      alt: 'Classes fulfilling health rules and regulations',
     },
     {
       src: '/images/school-health-4.jpg',
-      alt: 'Vaccination camp',
+      alt: 'Classes fulfilling health rules and regulations',
+    },
+    {
+      src: '/images/school-health-5.jpg',
+      alt: 'School health checkups',
     },
   ];
 
@@ -35,18 +35,18 @@ export default function SchoolHealthServices() {
 
   return (
     <div className="min-h-screen">
-      <section className="py-16 bg-gray-100 text-center">
+      <section className="py-16 bg-gray-100 text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">School Health Services</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           Every year since inception, we conduct regular screening camps, deworming camps, vaccination camps, and medical drives (all free of cost) in slums (katchi abadis) of Karachi.
         </p>
         <div className="relative w-full max-w-3xl mx-auto h-64 sm:h-80 md:h-96 my-8">
           <Image
-            src={images[1].src}
-            alt={images[1].alt}
+            src={images[0].src}
+            alt={images[0].alt}
             layout="fill"
             objectFit="cover"
-            className="rounded-lg"
+            className="rounded-2xl shadow-lg border-2 border-black"
           />
         </div>
         <p className="max-w-3xl mx-auto text-lg px-4">
@@ -54,11 +54,11 @@ export default function SchoolHealthServices() {
         </p>
         <div className="relative w-full max-w-3xl mx-auto h-64 sm:h-80 md:h-96 my-8">
           <Image
-            src={images[2].src}
-            alt={images[2].alt}
+            src={images[1].src}
+            alt={images[1].alt}
             layout="fill"
             objectFit="cover"
-            className="rounded-lg"
+            className="rounded-2xl shadow-lg border-2 border-black"
           />
         </div>
         <p className="max-w-3xl mx-auto text-lg px-4">
@@ -69,18 +69,18 @@ export default function SchoolHealthServices() {
         </p>
       </section>
 
-      <section className="py-16 text-center">
+      <section className="py-16 text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">Health & Nutrition Services by Irteqa School Health Programme</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           The healthy development of children and adolescents is influenced by many societal institutions. After the family, the school is the primary institution responsible for the development of young people all over the world. Schools have direct contact with more than 95 percent of the nation’s young people aged 5–17 years, for about 6 hours a day, and for up to 13 critical years of their social, psychological, physical, and intellectual development. The health of young people is strongly linked to their academic success, and their academic success is strongly linked with their health.
         </p>
         <div className="relative w-full max-w-3xl mx-auto h-64 sm:h-80 md:h-96 my-8">
           <Image
-            src={images[3].src}
-            alt={images[3].alt}
+            src={images[2].src}
+            alt={images[2].alt}
             layout="fill"
             objectFit="cover"
-            className="rounded-lg"
+            className="rounded-2xl shadow-lg border-2 border-black"
           />
         </div>
         <p className="max-w-3xl mx-auto text-lg px-4">
@@ -88,18 +88,18 @@ export default function SchoolHealthServices() {
         </p>
       </section>
 
-      <section className="py-16 text-center">
+      <section className="py-16 text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">Why Need a School Health Program?</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           The primary business of any school is education. However, research shows that students learn best when they are healthy, safe, and feel connected to their school. An investment in a healthy school community is an investment in student success. The healthy development of children and adolescents is influenced by many societal institutions. After the family, the school is the primary institution responsible for the development of young people all over the world.
         </p>
         <div className="relative w-full max-w-3xl mx-auto h-64 sm:h-80 md:h-96 my-8">
           <Image
-            src={images[4].src}
-            alt={images[4].alt}
+            src={images[3].src}
+            alt={images[3].alt}
             layout="fill"
             objectFit="cover"
-            className="rounded-lg"
+            className="rounded-2xl shadow-lg border-2 border-black"
           />
         </div>
         <p className="max-w-3xl mx-auto text-lg px-4">
@@ -107,7 +107,7 @@ export default function SchoolHealthServices() {
         </p>
       </section>
 
-      <section className="py-16 bg-gray-100 text-center">
+      <section className="py-16 bg-gray-100 text-center fade-in">
         <h2 className="text-3xl font-bold mb-4">What Irteqa School Health Program (ISHP) Has To Offer</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           ISHP offers comprehensive health programs and provides services in various schools. It has also adopted three schools where it is providing honorary school health services. ISHP offers the following services as part of the Onsite School Clinic/Health Room:
@@ -125,6 +125,15 @@ export default function SchoolHealthServices() {
           <li>Pharmacy</li>
           <li>First-Aid Training and Internship Opportunities</li>
         </ul>
+        <div className="relative w-full max-w-3xl mx-auto h-64 sm:h-80 md:h-96 my-8">
+          <Image
+            src={images[4].src}
+            alt={images[4].alt}
+            layout="fill"
+            objectFit="cover"
+            className="rounded-2xl shadow-lg border-2 border-black"
+          />
+        </div>
       </section>
     </div>
   );

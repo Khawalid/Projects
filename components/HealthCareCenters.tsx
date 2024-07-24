@@ -33,7 +33,7 @@ export default function HealthCareCenters() {
           alt={images[0].alt}
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover border-2 border-black shadow-lg"
         />
       </header>
 
@@ -54,7 +54,7 @@ export default function HealthCareCenters() {
       </section>
 
       <section className="py-16 bg-gray-100 text-center fade-in">
-        <h2 className="text-3xl font-bold mb-4">Gallery</h2>
+        <h2 className="text-3xl font-bold mb-4">Medical Camps</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
           {images.map((image, index) => (
             <div key={index} className="relative w-full h-64 sm:h-80 md:h-96 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
@@ -63,7 +63,7 @@ export default function HealthCareCenters() {
                 alt={image.alt}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-lg"
+                className="rounded-2xl shadow-lg border-2 border-black"
               />
             </div>
           ))}

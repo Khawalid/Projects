@@ -33,7 +33,7 @@ export default function MedicalResearch() {
           alt={images[0].alt}
           layout="fill"
           objectFit="cover"
-          className="absolute"
+          className="absolute border-2 border-black shadow-lg"
         />
       </header>
 
@@ -66,10 +66,55 @@ export default function MedicalResearch() {
                 alt={image.alt}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-lg"
+                className="rounded-lg border-2 border-black shadow-lg"
               />
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Recommendations Section */}
+      <section className="py-16 bg-gray-100 text-center fade-in">
+        <h2 className="text-3xl font-bold mb-8">Recommendations</h2>
+        <div className="flex flex-col md:flex-row items-center justify-around px-4">
+          <div className="flex flex-col items-center md:items-start mb-8 md:mb-0 md:mr-8">
+            <Image
+              src="/images/Shain.png"
+              alt="Dr. Shian Angelo"
+              width={300}
+              height={300}
+              className="rounded-lg border-2 border-black shadow-lg"
+            />
+            <div className="mt-4 text-left">
+              <h3 className="text-xl font-bold">Dr. Shian Angelo</h3>
+              <p>B.D.S, MS (HCSM)</p>
+              <p>Lecturer & practicing dentist</p>
+              <p>Ziauddin University, Karachi</p>
+            </div>
+          </div>
+          <div className="max-w-lg text-xl font-extrabold">
+            <p className="mb-4">“My passionate mentor continuously guided me to conclude my research project. It was an amazing journey full of learning and now I feel that I am capable to manage future assignment independently.”</p>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row items-center justify-around px-4 mt-16">
+          <div className="flex flex-col items-center md:items-start mb-8 md:mb-0 md:mr-8">
+            <Image
+              src="/images/Sikendar.jpg"
+              alt="Dr. Sikandar Shahzad Imran"
+              width={300}
+              height={300}
+              className="rounded-lg border-2 border-black shadow-lg"
+            />
+            <div className="mt-4 text-left">
+              <h3 className="text-xl font-bold">Dr. Sikandar Shahzad Imran</h3>
+              <p>M.B.B.S, MD, DABIM, MCPS (HCSM)</p>
+              <p>Associate Medical Director</p>
+              <p>Rehman Medical Institute, Peshawar</p>
+            </div>
+          </div>
+          <div className="max-w-lg text-xl font-extrabold">
+            <p className="mb-4">“Unconditional sustenance for pulling my research project all the way!... from idea generation to publication. Now I feel more confident.”</p>
+          </div>
         </div>
       </section>
     </div>

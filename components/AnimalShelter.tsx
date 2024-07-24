@@ -11,6 +11,9 @@ export default function AnimalShelter() {
     { src: '/images/animal-4.jpg', alt: 'Animal Shelter 4', width: 540, height: 405 },
     { src: '/images/animal-5.jpg', alt: 'All destitute animals need care. Volunteering and sharing love is a great way to escape from worries of life.', width: 1280, height: 960 },
     { src: '/images/animal-6.jpg', alt: 'Animal Shelter 6', width: 1280, height: 960 },
+    { src: '/images/animal-7.jpg', alt: 'Animal Shelter 7', width: 960, height: 1280 },
+    { src: '/images/animal-8.jpg', alt: 'Animal Shelter 8', width: 640, height: 480 },
+    { src: '/images/animal-9.jpg', alt: 'Animal Shelter 9', width: 480, height: 270 },
   ];
 
   useEffect(() => {
@@ -33,7 +36,7 @@ export default function AnimalShelter() {
           alt={images[0].alt}
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover border-2 border-black shadow-lg"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white p-4">
           <p className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
@@ -69,7 +72,7 @@ export default function AnimalShelter() {
                   alt={image.alt}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-lg"
+                  className="rounded-lg border-2 border-black shadow-lg"
                 />
               </div>
               {image.alt === 'All destitute animals need care. Volunteering and sharing love is a great way to escape from worries of life.' && (

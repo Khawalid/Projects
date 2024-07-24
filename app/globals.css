@@ -57,13 +57,33 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Keyframes for the fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Base fade-in class */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  /* Active class to trigger the animation */
+  .fade-in-active {
+    opacity: 1;
+    animation: fadeIn 1s ease-in-out;
   }
 }

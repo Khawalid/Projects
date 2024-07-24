@@ -61,9 +61,9 @@ export default function HomePage() {
             alt="Health services for all"
             layout="fill"
             objectFit="cover"
-            objectPosition="top"
-            className="absolute w-full h-full"
+            className="absolute w-full h-full object-cover border-2 border-black shadow-lg"
           />
+          <div className="absolute inset-0 bg-black opacity-30"></div>
         </div>
       </header>
 
@@ -107,7 +107,7 @@ export default function HomePage() {
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="text-center bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              className="text-center bg-blue-200 bg-opacity-50 text-black p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 border-2 border-black"
             >
               <div className="w-32 h-32 mx-auto">
                 <Image
@@ -120,8 +120,8 @@ export default function HomePage() {
                 />
               </div>
               <h3 className="mt-6 text-xl font-bold">{member.name}</h3>
-              <p className="mt-2 text-lg text-gray-700">{member.qualifications}</p>
-              <p className="mt-2 text-lg text-gray-500">{member.role}</p>
+              <p className="mt-2 text-lg">{member.qualifications}</p>
+              <p className="mt-2 text-lg">{member.role}</p>
             </div>
           ))}
         </div>
