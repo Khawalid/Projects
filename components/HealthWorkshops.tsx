@@ -12,7 +12,6 @@ export default function MedicalResearch() {
     { src: '/images/workshop-5.jpg', alt: 'Workshop 5' },
     { src: '/images/workshop-6.jpg', alt: 'Workshop 6' },
   ];
-
   useEffect(() => {
     document.querySelectorAll('.fade-in').forEach(el => {
       el.classList.add('fade-in-active');
@@ -38,7 +37,7 @@ export default function MedicalResearch() {
       </header>
 
       <section className="py-12 bg-gray-100 text-center fade-in">
-        <h2 className="text-3xl font-bold mb-4">NON-Profit Medical Research</h2>
+        <h2 className="text-3xl font-bold mb-4">Non-profit Medical Research</h2>
         <p className="max-w-3xl mx-auto text-lg mb-4 px-4">
           Offering the opportunity to transform the way research is conducted and shared, accelerating those processes through which it will be increasingly possible to make science more open, efficient, and collaborative.
         </p>
@@ -48,7 +47,7 @@ export default function MedicalResearch() {
         <p className="max-w-3xl mx-auto text-lg mb-4 px-4">
           To spring rise to a unique ecosystem in which health and research are mutually dependent, it is obligatory to implement a series of initiatives that serve to achieve:
         </p>
-        <p className='text-3xl font-bold mb-4'>We offer free Support for Medical Research</p>
+        <p className='text-3xl font-bold mb-4'>We offer free support for Medical Research</p>
         <ul className="max-w-3xl mx-auto text-lg list-disc list-inside mb-4 px-4 text-left">
           <li>Free of cost; young researcher’s capacity and capabilities enhancements through training and lectures.</li>
           <li>Complimentary mentorship programs and continuous guidance to novice medical researchers through collaborating panel of experts working as volunteers.</li>
@@ -74,7 +73,6 @@ export default function MedicalResearch() {
         </div>
       </section>
 
-      {/* Recommendations Section */}
       <section className="py-12 bg-gray-100 text-center fade-in">
         <h2 className="text-3xl font-bold mb-8">Testimonials</h2>
         <div className="flex flex-col md:flex-row items-center justify-around px-4">
@@ -86,7 +84,7 @@ export default function MedicalResearch() {
               height={300}
               className="rounded-lg border-2 border-black shadow-lg"
             />
-            <div className="mt-4 text-left w-full md:w-auto md:text-center">
+            <div className="mt-4 text-center w-full md:w-auto md:text-center">
               <h3 className="text-xl font-bold">Dr. Shian Angelo</h3>
               <p>B.D.S, MS (HCSM)</p>
               <p>Lecturer & practicing dentist</p>
@@ -106,7 +104,7 @@ export default function MedicalResearch() {
               height={300}
               className="rounded-lg border-2 border-black shadow-lg"
             />
-            <div className="mt-4 text-left w-full md:w-auto md:text-center">
+            <div className="mt-4 text-center w-full md:w-auto md:text-center">
               <h3 className="text-xl font-bold">Dr. Sikandar Shahzad Imran</h3>
               <p>M.B.B.S, MD, DABIM, MCPS (HCSM)</p>
               <p>Associate Medical Director</p>

@@ -12,7 +12,6 @@ export default function AnimalShelter() {
     { src: '/images/animal-8.jpg', alt: 'Animal Shelter 8', width: 640, height: 480 },
     { src: '/images/animal-9.jpg', alt: 'Animal Shelter 9', width: 480, height: 270 },
   ];
-
   useEffect(() => {
     document.querySelectorAll('.fade-in').forEach(el => {
       el.classList.add('fade-in-active');
@@ -37,7 +36,7 @@ export default function AnimalShelter() {
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white p-4">
           <p className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-            “Last year I was traveling for a week with family. I was worried about my dog. IWO took care of my worries, without charge.”
+            “Last year I was traveling for a week with my family. I was worried about my dog. IWO took care of my worries, without charge.”
           </p>
         </div>
       </header>

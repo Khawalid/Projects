@@ -20,7 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
-import { FaFacebook, FaWhatsapp, FaEnvelope, FaGlobe } from "react-icons/fa"; // Import necessary icons from react-icons
+import { FaFacebook, FaWhatsapp, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }),
@@ -304,7 +304,7 @@ const ContactUs = () => {
         <div className="mt-8 text-center">
           <p>Address: House No. B-67, Street No. 5, Azeem Khan Goth, Block 4-A, Gulshan -e- Iqbal, Karachi, Pakistan</p>
           <p className="flex items-center justify-center mt-2">
-            <FaWhatsapp className="mr-2 text-green-600" />
+            <FaWhatsapp className="mr-2 text-green-600 w-8 h-8" />
             Contact us (call or whatsapp): +92 331-2440525
           </p>
           <p className="flex items-center justify-center mt-2">

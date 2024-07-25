@@ -4,7 +4,7 @@ const teamMembers = [
   {
     name: "Dr. Farah Ahmad",
     qualifications: "MBBS, DCPS, MCPS (HCSM), CHPE, MSBE",
-    role: "Founding member, General Secretary",
+    role: "Founding Member, General Secretary",
     photo: "/images/team/farah.png",
   },
   {
@@ -21,24 +21,23 @@ const teamMembers = [
   },
   {
     name: "Dr. Hasan Danish",
-    qualifications: "MBBS, MPH, FCPS*",
-    role: "Joint secretary",
+    qualifications: "MBBS, MPH, FCPS",
+    role: "Joint Secretary",
     photo: "/images/team/hasan.png",
   },
   {
     name: "Mr. Azhar Kazmi",
     qualifications: "MA (Economics), MBA",
-    role: "Founding member, Treasurer",
+    role: "Founding Member, Treasurer",
     photo: "/images/team/azhar.png",
   },
   {
     name: "Mr. Mushtaq Ahmad",
     qualifications: "BE, MS",
-    role: "Founding member, Vice president (Overseas)",
+    role: "Founding Member, Vice president (Overseas)",
     photo: "/images/team/mushtaq.png",
   },
 ];
-
 export default function HomePage() {
   return (
     <div className="min-h-screen">
@@ -47,14 +46,6 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Home Page Image Here
           </h1>
-          {/* Uncomment below line if you want to add an actual image */}
-          {/* <Image
-            src="/images/home.jpg"
-            alt="Health services for all"
-            layout="fill"
-            objectFit="cover"
-            className="absolute w-full h-full object-cover border-2 border-black shadow-lg"
-          /> */}
           <div className="absolute inset-0 bg-black opacity-30"></div>
         </div>
       </header>

@@ -12,7 +12,6 @@ export default function HealthCareCenters() {
     { src: '/images/elderly-5.jpg', alt: 'Elderly care 5' },
     { src: '/images/elderly-6.jpeg', alt: 'Elderly care 6' },
   ];
-
   useEffect(() => {
     document.querySelectorAll('.fade-in').forEach(el => {
       el.classList.add('fade-in-active');

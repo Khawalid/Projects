@@ -1,31 +1,30 @@
 "use client";
-import Image from 'next/image';
-import { useEffect } from 'react';
+import Image from "next/image";
+import { useEffect } from "react";
 
 export default function SchoolHealthServices() {
   const images = [
     {
-      src: '/images/school-health-1.jpg',
-      alt: 'School health camp',
+      src: "/images/school-health-1.jpg",
+      alt: "School health camp",
     },
     {
-      src: '/images/school-health-2.jpg',
-      alt: 'Health education session',
+      src: "/images/school-health-2.jpg",
+      alt: "Health education session",
     },
     {
-      src: '/images/school-health-3.jpg',
-      alt: 'Classes fulfilling health rules and regulations',
+      src: "/images/school-health-3.jpg",
+      alt: "Classes fulfilling health rules and regulations",
     },
     {
-      src: '/images/school-health-4.jpg',
-      alt: 'Classes fulfilling health rules and regulations',
+      src: "/images/school-health-4.jpg",
+      alt: "Classes fulfilling health rules and regulations",
     },
     {
-      src: '/images/school-health-5.jpg',
-      alt: 'School health checkups',
+      src: "/images/school-health-5.jpg",
+      alt: "School health checkups",
     },
   ];
-
   useEffect(() => {
     const fadeIns = document.querySelectorAll('.fade-in');
     fadeIns.forEach((fadeIn) => {
@@ -36,7 +35,7 @@ export default function SchoolHealthServices() {
   return (
     <div className="min-h-screen">
       <section className="py-16 bg-gray-100 text-center fade-in">
-        <h2 className="text-3xl font-bold mb-4">School Health Services</h2>
+        <h2 className="text-3xl font-bold mb-4">School Health Service</h2>
         <p className="max-w-3xl mx-auto text-lg px-4">
           Every year since inception, we conduct regular screening camps, deworming camps, vaccination camps, and medical drives (all free of cost) in slums (katchi abadis) of Karachi.
         </p>
@@ -65,7 +64,7 @@ export default function SchoolHealthServices() {
           We have 9 state-of-the-art school health rooms working in different schools of Karachi.
         </p>
         <p className="max-w-3xl mx-auto text-lg px-4">
-          <strong>Adopt A School Project:</strong> 3 adopted school health rooms giving services free of cost to the students. IWO is collaborating with organizations and companies in opening school health rooms in government schools and schools in slums (katchi abadis). The health room is named after the sponsoring organization. Technical support is provided by IWO, and running expenditures are funded by the sponsoring partner. Annually, third-party evaluation is conducted with reports submitted to the sponsoring partners.
+          <strong className='text-2xl'>Adopt A School Project:</strong> 3 adopted school health rooms giving services free of cost to the students. IWO is collaborating with organizations and companies in opening school health rooms in government schools and schools in slums (katchi abadis). The health room is named after the sponsoring organization. Technical support is provided by IWO, and running expenditures are funded by the sponsoring partner. Annually, third-party evaluation is conducted with reports submitted to the sponsoring partners.
         </p>
       </section>
 

@@ -106,13 +106,13 @@ export default function RootLayout({ children }: LayoutProps) {
                     className="absolute left-0 mt-2 bg-blue-500 p-2 space-y-2 rounded shadow-lg w-48 z-30"
                   >
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                      <Link href="/services/school-health" onClick={handleMenuItemClick}>School Health Services</Link>
+                      <Link href="/services/school-health" onClick={handleMenuItemClick}>School Health Service</Link>
                     </li>
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
                       <Link href="/services/health-care-centers" onClick={handleMenuItemClick}>Health Care Centers</Link>
                     </li>
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                      <Link href="/services/health-workshops" onClick={handleMenuItemClick}>Medical Research</Link>
+                      <Link href="/services/health-workshops" onClick={handleMenuItemClick}>Non-profit Medical Research</Link>
                     </li>
                     <li className="hover:bg-blue-700 transition-colors p-2 rounded">
                       <Link href="/services/animal-shelter" onClick={handleMenuItemClick}>Animal Shelter</Link>
@@ -150,13 +150,13 @@ export default function RootLayout({ children }: LayoutProps) {
                       className="mt-2 bg-blue-500 p-2 space-y-2 rounded shadow-lg"
                     >
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                        <Link href="/services/school-health" onClick={handleMenuItemClick}>School Health Services</Link>
+                        <Link href="/services/school-health" onClick={handleMenuItemClick}>School Health Service</Link>
                       </li>
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
                         <Link href="/services/health-care-centers" onClick={handleMenuItemClick}>Health Care Centers</Link>
                       </li>
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
-                        <Link href="/services/health-workshops" onClick={handleMenuItemClick}>Medical Research</Link>
+                        <Link href="/services/health-workshops" onClick={handleMenuItemClick}>Non-profit Medical Research</Link>
                       </li>
                       <li className="hover:bg-blue-700 transition-colors p-2 rounded">
                         <Link href="/services/animal-shelter" onClick={handleMenuItemClick}>Animal Shelter</Link>
