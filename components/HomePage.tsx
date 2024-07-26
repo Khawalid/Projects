@@ -38,15 +38,19 @@ const teamMembers = [
     photo: "/images/team/mushtaq.png",
   },
 ];
+
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       <header className="relative w-full mb-8 z-10 overflow-hidden">
-        <div className="relative w-full h-64 md:h-96 bg-gray-300 flex items-center justify-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-center">
-            Home Page Image Here
-          </h1>
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+        <div className="relative w-full h-64 md:h-96 bg-gray-300 flex items-center justify-center border-2 border-black shadow-lg">
+          <Image
+            src="/images/home.jpg"
+            alt="Home Page Image"
+            layout="fill"
+            objectFit="cover"
+            className="object-cover"
+          />
         </div>
       </header>
 

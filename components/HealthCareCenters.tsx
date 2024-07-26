@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function HealthCareCenters() {
   const images = [
-    { src: '/images/home.jpg', alt: 'Elderly care 1' },
+    { src: '/images/elderly-1.jpg', alt: 'Elderly care 1' },
     { src: '/images/elderly-2.jpg', alt: 'Elderly care 2' },
     { src: '/images/elderly-3.jpg', alt: 'Elderly care 3' },
     { src: '/images/elderly-4.jpg', alt: 'Elderly care 4' },
