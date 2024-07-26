@@ -92,7 +92,7 @@ export default function MedicalResearch() {
             </div>
           </div>
           <div className="max-w-lg text-xl font-extrabold">
-            <p className="mb-4">“My passionate mentor continuously guided me to conclude my research project. It was an amazing journey full of learning and now I feel that I am capable to manage future assignment independently.”</p>
+            <p className="mb-4">“My passionate mentor continuously guided me to conclude my research project. It was an amazing journey full of learning and now I feel that I am capable to manage future Assignment's independently.”</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-around px-4 mt-16">

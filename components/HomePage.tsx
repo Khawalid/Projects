@@ -34,7 +34,7 @@ const teamMembers = [
   {
     name: "Mr. Mushtaq Ahmad",
     qualifications: "BE, MS",
-    role: "Founding Member, Vice president (Overseas)",
+    role: "Founding Member, Vice President (Overseas)",
     photo: "/images/team/mushtaq.png",
   },
 ];
