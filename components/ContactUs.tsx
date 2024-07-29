@@ -73,7 +73,7 @@ const ContactUs = () => {
   const [message, setMessage] = useState("");
   const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
     try {
-      const response = await fetch("http://iwo.org.pk/submitForm", {
+      const response = await fetch("https://iwo.org.pk/submitForm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
