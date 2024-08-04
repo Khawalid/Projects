@@ -55,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta name="description" content="Irteqa Welfare Organization provides multiple health services in Pakistan, focusing on innovative and enduring methods in healthcare and research." />
         <meta name="keywords" content="Irteqa Welfare Organization, health services, Pakistan, nonprofit, healthcare, research, animal shelter" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/images/logo.jpg" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.variable} bg-white text-gray-900`}>
         <header className="bg-blue-500 text-white p-4 shadow-md z-20 relative">
